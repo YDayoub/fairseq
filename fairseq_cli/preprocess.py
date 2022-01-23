@@ -14,7 +14,8 @@ import sys
 import typing as tp
 from argparse import Namespace
 from itertools import zip_longest
-
+sys.path.insert(0,'/root/fairseq/')
+print(sys.path)
 from fairseq import options, tasks, utils
 from fairseq.binarizer import (
     AlignmentDatasetBinarizer,
